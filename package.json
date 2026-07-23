@@ -6,12 +6,12 @@
     "node": ">=20"
   },
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "lint": "eslint .",
-  "test": "cross-env TZ=America/Los_Angeles vitest run",
-  "test:coverage": "cross-env TZ=America/Los_Angeles vitest run --coverage"
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
+    "lint": "eslint .",
+    "test": "cross-env TZ=America/Los_Angeles vitest run",
+    "test:coverage": "cross-env TZ=America/Los_Angeles vitest run --coverage"
   },
   "dependencies": {
     "next": "16.1.6",
